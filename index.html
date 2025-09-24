@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRINETRA GAMES - CRAFTING EXTRAORDINARY GAMING EXPERIENCES</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="NEXUS STUDIOS - Independent game development studio crafting extraordinary gaming experiences since 2019.">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-brutal">
+            <div class="logo">TRINETRA GAMES</div>
+            <div class="nav-menu">
+                <a href="#games" class="nav-link">GAMES</a>
+                <a href="#team" class="nav-link">TEAM</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="toggle-icon">◐</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">TRINETRA GAMES</h1>
+            <p class="hero-subtitle">CRAFTING EXTRAORDINARY GAMING EXPERIENCES</p>
+            <div class="hero-meta">
+                <span class="founded">EST. 2024</span>
+                <span class="separator">|</span>
+                <span class="location">INDIA</span>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">15-20</span>
+                    <span class="stat-label">DEVELOPERS</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">GAMES</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">RELEASED</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>EXPLORE</span>
+        </div>
+    </section>
+
+    <!-- Game Showcase -->
+    <section class="games" id="games">
+        <div class="section-header">
+            <h2 class="section-title">GAME PORTFOLIO</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="games-grid">
+            <div class="game-card" data-game="project-glyph">
+                <div class="game-number">01</div>
+                <h3 class="game-title">GLYPH</h3>
+                <p class="game-description">2D Puzzle Platformer</p>
+                <div class="game-meta">
+                    <span class="game-status status--success">Pre-Production</span>
+                    <span class="game-genre">puzzle/Platform</span>
+                </div>
+                <button class="btn btn--primary game-view-btn">VIEW GAME</button>
+            </div>
+
+            <div class="game-card" data-game="project-neo">
+                <div class="game-number">02</div>
+                <h3 class="game-title">PROJECT NEO</h3>
+                <p class="game-description">BASED ON INDIAN CULTURE</p>
+                <div class="game-meta">
+                    <span class="game-status status--warning">IDEAATION</span>
+                    <span class="game-genre">NULL</span>
+                </div>
+                <button class="btn btn--primary game-view-btn">VIEW GAME</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Detail Modal -->
+    <div class="modal hidden" id="gameModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+            <div class="game-detail">
+                <div class="game-header">
+                    <h2 class="game-detail-title"></h2>
+                    <p class="game-detail-subtitle"></p>
+                </div>
+                
+                <div class="game-content">
+                    <div class="game-main">
+                        <div class="game-trailer">
+                            <h3>TRAILER</h3>
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <span>GAME TRAILER</span>
+                            </div>
+                        </div>
+                        
+                        <div class="game-screenshots">
+                            <h3>SCREENSHOTS</h3>
+                            <div class="screenshots-grid">
+                                <div class="screenshot-placeholder">SCREENSHOT 1</div>
+                                <div class="screenshot-placeholder">SCREENSHOT 2</div>
+                                <div class="screenshot-placeholder">SCREENSHOT 3</div>
+                                <div class="screenshot-placeholder">SCREENSHOT 4</div>
+                            </div>
+                        </div>
+                        
+                        <div class="game-description">
+                            <h3>ABOUT THIS GAME</h3>
+                            <div class="description-text"></div>
+                        </div>
+                        
+                        <div class="game-features">
+                            <h3>KEY FEATURES</h3>
+                            <ul class="features-list"></ul>
+                        </div>
+                    </div>
+                    
+                    <div class="game-sidebar">
+                        <div class="game-info-block">
+                            <h4>GAME INFORMATION</h4>
+                            <div class="info-item">
+                                <span class="info-label">Genre:</span>
+                                <span class="info-value game-genre-info"></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Platforms:</span>
+                                <div class="platforms-list"></div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Release Date:</span>
+                                <span class="info-value game-release-date"></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Rating:</span>
+                                <span class="info-value game-rating"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="game-team-block">
+                            <h4>DEVELOPMENT TEAM</h4>
+                            <div class="team-list"></div>
+                        </div>
+                        
+                        <div class="game-downloads">
+                            <h4>GET THE GAME</h4>
+                            <div class="download-links"></div>
+                        </div>
+                        
+                        <div class="system-requirements">
+                            <h4>SYSTEM REQUIREMENTS</h4>
+                            <div class="requirements-content">
+                                <div class="req-section">
+                                    <h5>Minimum</h5>
+                                    <div class="req-minimum"></div>
+                                </div>
+                                <div class="req-section">
+                                    <h5>Recommended</h5>
+                                    <div class="req-recommended"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="section-header">
+            <h2 class="section-title">OUR TEAM</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="team-grid">
+            <div class="member-card">
+                <div class="member-number">[01]</div>
+                <h3 class="member-name">NITIN BURLI</h3>
+                <p class="member-role">CREATIVE DIRECTOR</p>
+                <p class="member-bio">
+                    Nitin brings creative vision to every project, ensuring every project meets our high standards for innovation and quality.
+                    <div class="member-expertise">
+                    <span class="expertise-tag">Game Design</span>
+                    <span class="expertise-tag">Creative Vision</span>
+                    <span class="expertise-tag">Team Leadership</span>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-number">[02]</div>
+                <h3 class="member-name">SANJAY B. U.</h3>
+                <p class="member-role">DEVELOPER x FOUNDER</p>
+                <p class="member-bio">
+                Sanjay brings technical excellence to every project, specializing in game engine optimization and innovative programming solutions that push the boundaries of what's possible.
+                    <div class="member-expertise">
+                    <span class="expertise-tag">Game Programming</span>
+                    <span class="expertise-tag">Engine Development</span>
+                    <span class="expertise-tag">Technical Architecture</span>
+                    <span class="expertise-tag">Performance Optimization</span>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-number">[03]</div>
+                <h3 class="member-name">GOSWAMI AYUSH RAJA</h3>
+                <p class="member-role">DEVELOPER x FOUNDER</p>
+                <p class="member-bio">
+                Goswami Ayush Raja is a developer and founder of Studio Trinetra. He is a programmer and graphic designer. He is also a UI/UX designer.</p>             
+                <div class="member-expertise">
+                    <span class="expertise-tag">Programmer</span>
+                    <span class="expertise-tag">Graphic Designer</span>
+                    <span class="expertise-tag">UI/UX Designer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-main">
+                <h2 class="about-title">INNOVATION THROUGH COLLABORATION</h2>
+                <div class="about-text">
+                    <p><strong>TRINETRA GAMES</strong> is an independent game development studio founded in 2024, dedicated to creating innovative and immersive gaming experiences. Our team of passionate developers, artists, and designers work collaboratively to push the boundaries of interactive entertainment.</p>
+
+                    <p>Based in India, our team of 15-20 talented individuals brings together diverse expertise in game design, programming, art direction, and project management. We believe in creating games that not only entertain but also inspire and challenge players. With a spirit of creativity and innovation, we also collaborate beyond India, embracing global perspectives and industry standards.</p>
+
+                    <p>Our mission is to craft extraordinary gaming experiences that resonate with players worldwide. Every project we undertake is approached with meticulous attention to detail and a commitment to excellence that defines our studio culture. We prioritize original ideas in a market dominated by copycat titles, fostering unique concept development and early-stage experimentation. At the same time, we operate on principles of continuous learning, encouraging participation and growth from individuals at all skill levels. By welcoming international collaboration, we share knowledge, embrace diverse perspectives, and align with global industry practices.</p>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-block">
+                    <div class="stat-title">FOUNDED</div>
+                    <div class="stat-value">2024</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-title">TEAM SIZE</div>
+                    <div class="stat-value">15-20</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-title">GAMES RELEASED</div>
+                    <div class="stat-value">0</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-title">IN DEVELOPMENT</div>
+                    <div class="stat-value">1</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">GET IN TOUCH (Currently Offline use our discord or contact us on our email)</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-block">
+                    <div class="contact-label">EMAIL</div>
+                    <div class="contact-value">contact@trinetragames.in</div>
+                </div>
+                <div class="contact-block">
+                    <div class="contact-label">LOCATION</div>
+                    <div class="contact-value">India</div>
+                </div>
+                <div class="contact-block">
+                    <div class="contact-label">BUSINESS HOURS</div>
+                    <div class="contact-value">MON-FRI 9AM-6PM IST</div>
+                </div>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label" for="name">NAME</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="inquiry">INQUIRY TYPE</label>
+                    <select id="inquiry" name="inquiry" class="form-control" required>
+                        <option value="">Select an option</option>
+                        <option value="game-inquiries">Game Inquiries</option>
+                        <option value="career">Career Opportunities</option>
+                        <option value="partnerships">Partnerships</option>
+                        <option value="press">Press & Media</option>
+                        <option value="other">Other Requests</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="message">MESSAGE</label>
+                    <textarea id="message" name="message" class="form-control" rows="6" placeholder="Tell us about your inquiry..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn--primary btn--full-width">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-logo">TRINETRA GAMES</div>
+                <div class="footer-tagline">Crafting Extraordinary Gaming Experiences</div>
+            </div>
+            <div class="footer-links">
+                <a href="https://twitter.com/trinetragames" target="_blank">TWITTER</a>
+                <a href="https://discord.gg/trinetragames" target="_blank">DISCORD</a>
+                <a href="https://store.steampowered.com/publisher/trinetragames" target="_blank">STEAM</a>
+                <a href="https://linkedin.com/company/trinetragames" target="_blank">LINKEDIN</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">© 2025 TRINETRA GAMES. ALL RIGHTS RESERVED.</div>
+            <div class="legal-links">
+                <a href="#privacy">PRIVACY POLICY</a>
+                <a href="#terms">TERMS OF SERVICE</a>
+                <a href="#cookies">COOKIES</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
