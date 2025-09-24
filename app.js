@@ -7,7 +7,7 @@ const GAME_DATA = {
     genre: "Puzzle/Platformer",
     platforms: ["PC", "Mobiles"],
     status: "Pre-Production",
-    releaseDate: "April, 2025",
+    releaseDate: "April 23, 2025",
     features: [
       "Procedural level generation",
       "Adaptive soundtrack",
