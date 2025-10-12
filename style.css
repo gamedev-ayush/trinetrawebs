@@ -2084,7 +2084,7 @@ select:focus:invalid {
 }
 
 .logo-img {
-    width: 100px; /* Reduced logo size */
+    width: 150px; /* Reduced logo size */
     height: auto;
 }
 
