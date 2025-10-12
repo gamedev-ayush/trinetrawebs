@@ -56,49 +56,6 @@ const GAME_DATA = {
   }
 };
 
-
-// Pure Monochrome Custom Cursor System
-class CustomCursor {
-  constructor() {
-    this.cursor = document.querySelector('.cursor');
-    this.isMoving = false;
-    this.init();
-  }
-  
-  init() {
-    if (!this.cursor) return;
-    
-    document.addEventListener('mousemove', (e) => this.handleMouseMove(e));
-    
-    // Handle hover states for interactive elements
-    const interactiveElements = document.querySelectorAll('a, button, .game-card, .member-card, input, textarea, select');
-    interactiveElements.forEach(el => {
-      el.addEventListener('mouseenter', () => this.handleHover(true));
-      el.addEventListener('mouseleave', () => this.handleHover(false));
-    });
-  }
-  
-  handleMouseMove(e) {
-    if (!this.cursor) return;
-    
-    const x = e.clientX;
-    const y = e.clientY;
-    
-    this.cursor.style.left = x - 8 + 'px';
-    this.cursor.style.top = y - 8 + 'px';
-  }
-  
-  handleHover(isHovering) {
-    if (!this.cursor) return;
-    
-    if (isHovering) {
-      this.cursor.classList.add('hover');
-    } else {
-      this.cursor.classList.remove('hover');
-    }
-  }
-}
-
 // Pure Monochrome Theme Toggle System
 class MonochromeThemeSystem {
   constructor() {
@@ -561,8 +518,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('NEXUS STUDIOS - Pure Monochrome Gaming Experience Initialized');
   
   // Initialize all professional systems with monochrome theme
-  new CustomCursor();
-  new MonochromeThemeSystem(); // Updated for pure monochrome
+  new MonochromeThemeSystem();
   new GameModalSystem();
   new NavigationSystem();
   new ContactFormSystem();
@@ -624,7 +580,6 @@ window.addEventListener('error', (e) => {
 
 // Export monochrome systems for potential external use
 window.NexusStudioMonochrome = {
-  CustomCursor,
   MonochromeThemeSystem,
   GameModalSystem,
   NavigationSystem,
