@@ -852,7 +852,6 @@ html {
   line-height: 1.5;
   background: var(--bg-primary);
   color: var(--text-primary);
-  cursor: none;
   overflow-x: hidden;
   scroll-behavior: smooth;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -862,25 +861,6 @@ body {
   background: var(--bg-primary);
   color: var(--text-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Custom Cursor */
-.cursor {
-    position: fixed;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transition: all 0.15s ease;
-    background: black;
-    border: 1px solid white;
-}
-
-.cursor.hover {
-  transform: scale(1.5);
-  background: transparent;
-  border-width: 2px;
 }
 
 /* Typography */
@@ -987,7 +967,7 @@ a:focus {
   border: 2px solid var(--border-color) !important;
   padding: 0;
   font-size: 16px;
-  cursor: none;
+  cursor: pointer;
   transition: all 0.3s ease;
   color: var(--text-primary) !important;
   width: 40px;
@@ -1281,7 +1261,7 @@ a:focus {
   font-size: 14px;
   font-weight: var(--font-weight-bold);
   line-height: 1.5;
-  cursor: none;
+  cursor: pointer;
   transition: all 0.25s ease;
   border: 3px solid var(--accent-color) !important;
   text-decoration: none;
@@ -1345,7 +1325,8 @@ a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--bg-secondary);
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
 }
 
 .modal-content {
@@ -1353,7 +1334,7 @@ a:focus {
   background: var(--bg-secondary);
   border: 3px solid var(--border-color);
   max-width: 1200px;
-  height: 100%;
+  max-height: 90vh;
   width: 100%;
   overflow-y: auto;
   z-index: 10001;
@@ -1371,7 +1352,7 @@ a:focus {
   height: 44px;
   font-size: 20px;
   color: var(--text-primary) !important;
-  cursor: none;
+  cursor: pointer;
   z-index: 10002;
   display: flex;
   align-items: center;
