@@ -910,7 +910,7 @@ a:focus {
 }
 
 .logo {
-  font-size: 50px;
+  font-size: 20px;
   font-weight: var(--font-weight-bold);
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1877,13 +1877,25 @@ select.form-control {
   background-position: right 16px center;
   background-size: 16px;
   padding-right: 40px;
-  background-color: var(--bg-primary) !important;
 }
 
-/* Dark theme select arrow */
+/* === FIX STARTS HERE === */
+
+/* Dark theme select arrow and styles */
 [data-theme="dark"] select.form-control {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23CCCCCC' stroke-width='3' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
 }
+
+/* Style for the options in the dropdown for dark theme */
+[data-theme="dark"] select.form-control option {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* === FIX ENDS HERE === */
+
 
 /* Footer */
 .footer {
@@ -2069,8 +2081,6 @@ select:focus:invalid {
     padding: 20px;
   }
 }
-
-/* === FIX STARTS HERE === */
 
 /* Logo container styles */
 .logo-container {
