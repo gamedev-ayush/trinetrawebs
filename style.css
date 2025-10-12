@@ -2009,7 +2009,7 @@ textarea:focus:valid,
 textarea:focus:invalid,
 select:focus:valid,
 select:focus:invalid {
-  border-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !importan
   box-shadow: -2px 2px 0 var(--accent-color) !important;
 }
 
@@ -2075,4 +2075,33 @@ select:focus:invalid {
   .game-detail {
     padding: 20px;
   }
+}
+/* Logo container styles */
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.logo-img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Theme-specific logo styles */
+[data-theme="dark"] .logo-img {
+    filter: invert(1); /* Invert colors for dark theme */
 }
