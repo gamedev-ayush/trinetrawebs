@@ -8,7 +8,7 @@ const GAME_DATA = {
     platforms: ["PC", "Mobiles"],
     status: "Pre-Production",
     releaseDate: "April 23, 2025",
-    trailer: "https://www.youtube.com/embed/dQw4w9WgXcQ", // <-- Replace with your YouTube embed link
+    trailer: "https://youtu.be/zKTTZNup2Cc?si=UlwLcB7O4ENocWrg", // 
     screenshots: [
         "https://via.placeholder.com/400x225.png?text=Screenshot+1", // <-- Replace with your image link
         "https://via.placeholder.com/400x225.png?text=Screenshot+2", // <-- Replace with your image link
