@@ -762,7 +762,7 @@ select.form-control {
   --text-tertiary: #666666;
   --border-color: #E5E5E5;
   --accent-color: #1A1A1A;
-  
+
   /* Additional light theme colors */
   --bg-grid: rgba(0, 0, 0, 0.03);
   --bg-card: #FFFFFF;
@@ -780,7 +780,7 @@ select.form-control {
   --text-tertiary: #999999;
   --border-color: #333333;
   --accent-color: #F5F5F5;
-  
+
   /* Additional dark theme colors */
   --bg-grid: rgba(255, 255, 255, 0.03);
   --bg-card: #1A1A1A;
@@ -1013,17 +1013,10 @@ a:focus {
   flex-direction: column;
   background: var(--bg-primary);
   background-size: 40px 40px;
-  background-image: 
+  background-image:
     linear-gradient(to right, var(--bg-grid) 1px, transparent 1px),
     linear-gradient(to bottom, var(--bg-grid) 1px, transparent 1px);
   transition: background-color 0.3s ease;
-}
-
-.hero-content {
-  text-align: center;
-  z-index: 2;
-  max-width: 800px;
-  padding: 0 20px;
 }
 
 .hero-title {
@@ -2009,7 +2002,7 @@ textarea:focus:valid,
 textarea:focus:invalid,
 select:focus:valid,
 select:focus:invalid {
-  border-color: var(--accent-color) !importan
+  border-color: var(--accent-color) !important;
   box-shadow: -2px 2px 0 var(--accent-color) !important;
 }
 
@@ -2020,79 +2013,107 @@ select:focus:invalid {
     flex-wrap: wrap;
     gap: 16px;
   }
-  
+
   .nav-menu {
     gap: 20px;
     order: 3;
     flex-basis: 100%;
     justify-content: center;
   }
-  
+
   .hero {
     padding: 0 20px;
   }
-  
+
   .hero-stats {
     flex-direction: column;
     gap: 16px;
     align-items: center;
   }
-  
+
   .games-grid,
   .team-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .about-content,
   .contact-content,
   .footer-content {
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  
+
   .game-content {
     grid-template-columns: 1fr;
   }
-  
+
   .form-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-links {
     text-align: left;
   }
-  
+
   .footer-bottom {
     flex-direction: column;
     gap: 16px;
     text-align: center;
   }
-  
+
   .modal-content {
     margin: 16px;
   }
-  
+
   .game-detail {
     padding: 20px;
   }
 }
+
+/* === FIX STARTS HERE === */
+
 /* Logo container styles */
 .logo-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
-    animation: fadeIn 2s ease-in-out forwards;
+    z-index: 10;
+    opacity: 0;
+    animation: fadeInOut 4s ease-in-out forwards;
 }
 
 .logo-img {
-    width: 150px; /* Adjust size as needed */
+    width: 100px; /* Reduced logo size */
     height: auto;
 }
 
-/* Keyframes for fade-in animation */
-@keyframes fadeIn {
+/* Hero content animation */
+.hero-content {
+  text-align: center;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+  opacity: 0;
+  animation: fadeInContent 2s ease-in-out 3s forwards;
+}
+
+/* Keyframes for logo fade-in-out animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* Keyframes for content fade-in animation */
+@keyframes fadeInContent {
     from {
         opacity: 0;
     }
@@ -2103,5 +2124,5 @@ select:focus:invalid {
 
 /* Theme-specific logo styles */
 [data-theme="dark"] .logo-img {
-    filter: invert(1); /* Invert colors for dark theme */
+    filter: invert(1);
 }
