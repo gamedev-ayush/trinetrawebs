@@ -2102,7 +2102,7 @@ select:focus:invalid {
   padding: 0 20px;
   opacity: 0;
   animation: fadeInContent 2s ease-in-out 3s forwards;
-  margin-top: 180px;
+  margin-top: 200px;
 }
 
 /* Keyframes for logo fade-in-out animation */
