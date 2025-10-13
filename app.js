@@ -8,12 +8,12 @@ const GAME_DATA = {
     platforms: ["PC", "Mobiles"],
     status: "Pre-Production",
     releaseDate: "April 23, 2025",
-    trailer: "https://youtu.be/zKTTZNup2Cc?si=UlwLcB7O4ENocWrg", // 
+    trailer: "https://www.youtube.com/embed/zKTTZNup2Cc?si=UikDXTIX_gwj6JUb", // 
     screenshots: [
-        "https://via.placeholder.com/400x225.png?text=Screenshot+1", // <-- Replace with your image link
-        "https://via.placeholder.com/400x225.png?text=Screenshot+2", // <-- Replace with your image link
-        "https://via.placeholder.com/400x225.png?text=Screenshot+3", // <-- Replace with your image link
-        "https://via.placeholder.com/400x225.png?text=Screenshot+4"  // <-- Replace with your image link
+        "https://img.itch.zone/aW1hZ2UvMzk1MzMwNC8yMzU3NjA3My5qcGc=/original/npGM%2Bl.jpg", // <-- Replace with your image link
+        "https://img.itch.zone/aW1hZ2UvMzk1MzMwNC8yMzU3NjA3MS5qcGc=/original/OwGU0h.jpg", // <-- Replace with your image link
+        "https://img.itch.zone/aW1hZ2UvMzk1MzMwNC8yMzU3NjA3MC5qcGc=/original/dYSQEw.jpg", // <-- Replace with your image link
+        "https://img.itch.zone/aW1hZ2UvMzk1MzMwNC8yMzU3NjA3Mi5qcGc=/original/n7BNaa.jpg"  // <-- Replace with your image link
     ],
     features: [
       "Procedural level generation",
@@ -34,9 +34,7 @@ const GAME_DATA = {
       recommended: "null"
     },
     downloads: {
-      steam: "null",
-      epic: "null",
-      playstore: "null"
+      itch: "https://sanjaythedev.itch.io/glyph",
     },
     rating: null
   },
@@ -58,8 +56,7 @@ const GAME_DATA = {
       recommended: "null"
     },
     downloads: {
-      steam: "null",
-      epic: "null"
+      itch: "https://sanjaythedev.itch.io/glyph",
     },
     rating: null
   }
