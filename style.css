@@ -2096,12 +2096,13 @@ select:focus:invalid {
 
 /* Hero content animation */
 .hero-content {
-  text-align: bottom;
+  text-align: center;
   z-index: 2;
   max-width: 800px;
   padding: 0 20px;
   opacity: 0;
   animation: fadeInContent 2s ease-in-out 3s forwards;
+  margin-top: 180px;
 }
 
 /* Keyframes for logo fade-in-out animation */
