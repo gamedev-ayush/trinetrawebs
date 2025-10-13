@@ -2090,13 +2090,13 @@ select:focus:invalid {
 }
 
 .logo-img {
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
 /* Hero content animation */
 .hero-content {
-  text-align: center;
+  text-align: bottom;
   z-index: 2;
   max-width: 800px;
   padding: 0 20px;
