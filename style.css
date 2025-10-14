@@ -792,6 +792,25 @@ select.form-control {
   --focus-outline: 2px solid var(--accent-color);
 }
 
+[data-theme="light"] {
+  --bg-primary: #FCFCF9;
+  --bg-secondary: #FFFFFF;
+  --text-primary: #000000;
+  --text-secondary: #404040;
+  --text-tertiary: #666666;
+  --border-color: #E5E5E5;
+  --accent-color: #1A1A1A;
+
+  /* This is the key fix: defining the grid color for the light theme */
+  --bg-grid: rgba(0, 0, 0, 0.05); /* Increased opacity slightly for better visibility */
+
+  --bg-card: #FFFFFF;
+  --bg-hover: rgba(0, 0, 0, 0.05);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --focus-ring: rgba(0, 0, 0, 0.3);
+  --focus-outline: 2px solid var(--accent-color);
+}
+
 /* Respect system preference when no explicit choice */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
