@@ -333,7 +333,7 @@ handleSubmit(e) {
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.7';
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this.form)
+    emailjs.sendForm(service_59411bf, template_5fqkko2, this.form)
       .then(() => {
         submitBtn.textContent = 'MESSAGE SENT!';
         submitBtn.style.background = 'var(--accent-color)';
