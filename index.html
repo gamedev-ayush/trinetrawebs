@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRINETRA GAMES - CRAFTING EXTRAORDINARY GAMING EXPERIENCES</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="TRINETRA GAMES - Independent game development studio crafting extraordinary gaming experiences since 2019.">
+    <meta name="description" content="TRINETRA GAMES - Independent game development studio crafting extraordinary gaming experiences since 2024.">
     <link rel="icon" type="image/png" href="favicon.png">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -17,7 +17,7 @@
 <body>
     <header class="header">
         <nav class="nav-brutal">
-            <div class="logo">TRINETRA GAMES</div>
+            <div class="logo">TRINETRA</div>
             <div class="nav-menu">
                 <a href="#games" class="nav-link">GAMES</a>
                 <a href="#team" class="nav-link">TEAM</a>
@@ -31,13 +31,15 @@
     </header>
 
     <section class="hero">
+        <div class="hero-background-pattern"></div>
         <div class="logo-container">
             <img src="favicon.png" alt="Trinetra Logo" class="logo-img">
         </div>
         <div class="hero-content">
+            <h1 class="hero-title">CRAFTING EXTRAORDINARY<br>GAMING EXPERIENCES</h1>
             <div class="hero-meta">
                 <span class="founded">EST. 2024</span>
-                <span class="separator">|</span>
+                <span class="separator">●</span>
                 <span class="location">INDIA</span>
             </div>
             <div class="hero-stats">
@@ -46,47 +48,56 @@
                     <span class="stat-label">DEVELOPERS</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">2</span>
+                    <span class="stat-number">02</span>
                     <span class="stat-label">GAMES</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">0</span>
+                    <span class="stat-number">00</span>
                     <span class="stat-label">RELEASED</span>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
             <div class="scroll-line"></div>
-            <span>EXPLORE</span>
+            <span>SCROLL TO EXPLORE</span>
         </div>
     </section>
 
     <section class="games" id="games">
         <div class="section-header">
+            <div class="section-label">OUR PROJECTS</div>
             <h2 class="section-title">GAME PORTFOLIO</h2>
             <div class="section-line"></div>
         </div>
         <div class="games-grid">
             <div class="game-card" data-game="project-glyph">
-                <div class="game-number">01</div>
-                <h3 class="game-title">GLYPH</h3>
-                <p class="game-description">2D Puzzle Platformer</p>
-                <div class="game-meta">
-                    <span class="game-status status--success">Pre-Production</span>
-                    <span class="game-genre">puzzle/Platform</span>
+                <div class="game-badge">
+                    <span class="game-number">01</span>
                 </div>
-                <button class="btn btn--primary game-view-btn">VIEW GAME</button>
+                <div class="game-card-content">
+                    <h3 class="game-title">GLYPH</h3>
+                    <p class="game-description">2D Puzzle Platformer</p>
+                    <div class="game-meta">
+                        <span class="game-status status--success">PRE-PRODUCTION</span>
+                        <span class="game-genre">PUZZLE / PLATFORM</span>
+                    </div>
+                    <button class="btn btn--primary game-view-btn">VIEW PROJECT →</button>
+                </div>
             </div>
 
             <div class="game-card" data-game="project-neo">
-                <div class="game-number">02</div>
-                <h3 class="game-title">PROJECT NEO</h3>
-                <p class="game-description">BASED ON INDIAN CULTURE</p>
-                <div class="game-meta">
-                    <span class="game-status status--warning">IDEATION</span>
-                    <span class="game-genre">NULL</span>
+                <div class="game-badge">
+                    <span class="game-number">02</span>
                 </div>
-                <button class="btn btn--primary game-view-btn">VIEW GAME</button>
+                <div class="game-card-content">
+                    <h3 class="game-title">PROJECT NEO</h3>
+                    <p class="game-description">BASED ON INDIAN CULTURE</p>
+                    <div class="game-meta">
+                        <span class="game-status status--warning">IDEATION</span>
+                        <span class="game-genre">TBD</span>
+                    </div>
+                    <button class="btn btn--primary game-view-btn">VIEW PROJECT →</button>
+                </div>
             </div>
         </div>
     </section>
@@ -94,7 +105,7 @@
     <div class="modal hidden" id="gameModal">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+            <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
             <div class="game-detail">
                 <div class="game-header">
                     <h2 class="game-detail-title"></h2>
@@ -104,15 +115,13 @@
                 <div class="game-content">
                     <div class="game-main">
                         <div class="game-trailer">
-                            <h3>Prototype</h3>
-                            <div class="game-trailer-container">
-                                </div>
+                            <h3>PROTOTYPE</h3>
+                            <div class="game-trailer-container"></div>
                         </div>
 
                         <div class="game-screenshots">
                             <h3>SCREENSHOTS</h3>
-                            <div class="screenshots-grid">
-                                </div>
+                            <div class="screenshots-grid"></div>
                         </div>
 
                         <div class="game-description">
@@ -178,62 +187,77 @@
 
     <section class="team" id="team">
         <div class="section-header">
+            <div class="section-label">MEET THE CREATORS</div>
             <h2 class="section-title">OUR TEAM</h2>
             <div class="section-line"></div>
         </div>
         <div class="team-grid">
             <div class="member-card">
-                <div class="member-number">[01]</div>
-                <h3 class="member-name">NITIN BURLI</h3>
-                <p class="member-role">CREATIVE DIRECTOR</p>
+                <div class="member-header">
+                    <div class="member-number">[01]</div>
+                    <h3 class="member-name">NITIN BURLI</h3>
+                    <p class="member-role">CREATIVE DIRECTOR</p>
+                </div>
                 <p class="member-bio">
                     Nitin brings creative vision to every project, ensuring every project meets our high standards for innovation and quality.
-                    <div class="member-expertise">
-                    <span class="expertise-tag">Game Design</span>
-                    <span class="expertise-tag">Creative Vision</span>
-                    <span class="expertise-tag">Team Leadership</span>
-                </div>
-            </div>
-
-            <div class="member-card">
-                <div class="member-number">[02]</div>
-                <h3 class="member-name">SANJAY</h3>
-                <p class="member-role">DEVELOPER x FOUNDER</p>
-                <p class="member-bio">
-                Sanjay brings technical excellence to every project, specializing in game engine optimization and innovative programming solutions that push the boundaries of what's possible.
-                    <div class="member-expertise">
-                    <span class="expertise-tag">Game Programming</span>
-                    <span class="expertise-tag">Engine Development</span>
-                    <span class="expertise-tag">Technical Architecture</span>
-                    <span class="expertise-tag">Performance Optimization</span>
-                </div>
-            </div>
-
-            <div class="member-card">
-                <div class="member-number">[03]</div>
-                <h3 class="member-name">GOSWAMI AYUSH RAJA</h3>
-                <p class="member-role">DEVELOPER x FOUNDER</p>
-                <p class="member-bio">
-                Goswami Ayush Raja is a developer and founder of Studio TRINETRA He is a programmer and graphic designer. He is also a UI/UX designer.</p>
+                </p>
                 <div class="member-expertise">
-                    <span class="expertise-tag">Programmer</span>
-                    <span class="expertise-tag">Graphic Designer</span>
-                    <span class="expertise-tag">UI/UX Designer</span>
+                    <span class="expertise-tag">GAME DESIGN</span>
+                    <span class="expertise-tag">CREATIVE VISION</span>
+                    <span class="expertise-tag">TEAM LEADERSHIP</span>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-header">
+                    <div class="member-number">[02]</div>
+                    <h3 class="member-name">SANJAY</h3>
+                    <p class="member-role">DEVELOPER × FOUNDER</p>
+                </div>
+                <p class="member-bio">
+                    Sanjay brings technical excellence to every project, specializing in game engine optimization and innovative programming solutions.
+                </p>
+                <div class="member-expertise">
+                    <span class="expertise-tag">GAME PROGRAMMING</span>
+                    <span class="expertise-tag">ENGINE DEV</span>
+                    <span class="expertise-tag">ARCHITECTURE</span>
+                    <span class="expertise-tag">OPTIMIZATION</span>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-header">
+                    <div class="member-number">[03]</div>
+                    <h3 class="member-name">GOSWAMI AYUSH RAJA</h3>
+                    <p class="member-role">DEVELOPER × FOUNDER</p>
+                </div>
+                <p class="member-bio">
+                    Goswami Ayush Raja is a developer and founder of Studio TRINETRA. He is a programmer and graphic designer with UI/UX expertise.
+                </p>
+                <div class="member-expertise">
+                    <span class="expertise-tag">PROGRAMMER</span>
+                    <span class="expertise-tag">GRAPHIC DESIGN</span>
+                    <span class="expertise-tag">UI/UX DESIGN</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="about" id="about">
+        <div class="section-header">
+            <div class="section-label">WHO WE ARE</div>
+            <h2 class="section-title">ABOUT STUDIO</h2>
+            <div class="section-line"></div>
+        </div>
         <div class="about-content">
             <div class="about-main">
                 <h2 class="about-title">INNOVATION THROUGH COLLABORATION</h2>
                 <div class="about-text">
                     <p><strong>TRINETRA GAMES</strong> is an independent game development studio founded in 2024, dedicated to creating innovative and immersive gaming experiences. Our team of passionate developers, artists, and designers work collaboratively to push the boundaries of interactive entertainment.</p>
 
-                    <p>Based in India, our team of 15-20 talented individuals brings together diverse expertise in game design, programming, art direction, and project management. We believe in creating games that not only entertain but also inspire and challenge players. With a spirit of creativity and innovation, we also collaborate beyond India, embracing global perspectives and industry standards.</p>
+                    <p>Based in India, our team of 15-20 talented individuals brings together diverse expertise in game design, programming, art direction, and project management. We believe in creating games that not only entertain but also inspire and challenge players.</p>
 
-                    <p>Our mission is to craft extraordinary gaming experiences that resonate with players worldwide. Every project we undertake is approached with meticulous attention to detail and a commitment to excellence that defines our studio culture. We prioritize original ideas in a market dominated by copycat titles, fostering unique concept development and early-stage experimentation. At the same time, we operate on principles of continuous learning, encouraging participation and growth from individuals at all skill levels. By welcoming international collaboration, we share knowledge, embrace diverse perspectives, and align with global industry practices.</p>
+                    <p>Our mission is to craft extraordinary gaming experiences that resonate with players worldwide. Every project we undertake is approached with meticulous attention to detail and a commitment to excellence that defines our studio culture.</p>
                 </div>
             </div>
             <div class="about-stats">
@@ -246,12 +270,12 @@
                     <div class="stat-value">15-20</div>
                 </div>
                 <div class="stat-block">
-                    <div class="stat-title">GAMES RELEASED</div>
-                    <div class="stat-value">0</div>
+                    <div class="stat-title">RELEASED</div>
+                    <div class="stat-value">00</div>
                 </div>
                 <div class="stat-block">
-                    <div class="stat-title">IN DEVELOPMENT</div>
-                    <div class="stat-value">1</div>
+                    <div class="stat-title">IN DEV</div>
+                    <div class="stat-value">01</div>
                 </div>
             </div>
         </div>
@@ -259,8 +283,10 @@
 
     <section class="contact" id="contact">
         <div class="section-header">
-            <h2 class="section-title">GET IN TOUCH (Currently Offline use our discord or contact us on our email)</h2>
+            <div class="section-label">LET'S CONNECT</div>
+            <h2 class="section-title">GET IN TOUCH</h2>
             <div class="section-line"></div>
+            <p class="section-note">Currently Offline - Use our Discord or email</p>
         </div>
         <div class="contact-content">
             <div class="contact-info">
@@ -281,17 +307,17 @@
             <form class="contact-form" id="contactForm">
                 <div class="form-grid">
                     <div class="form-group">
-                        <label class="form-label" for="name">NAME</label>
+                        <label class="form-label" for="name">NAME *</label>
                         <input type="text" id="name" name="name" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="email">EMAIL</label>
+                        <label class="form-label" for="email">EMAIL *</label>
                         <input type="email" id="email" name="email" class="form-control" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label" for="inquiry">INQUIRY TYPE</label>
+                    <label class="form-label" for="inquiry">INQUIRY TYPE *</label>
                     <select id="inquiry" name="inquiry" class="form-control" required>
                         <option value="">Select an option</option>
                         <option value="game-inquiries">Game Inquiries</option>
@@ -303,11 +329,11 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label" for="message">MESSAGE</label>
+                    <label class="form-label" for="message">MESSAGE *</label>
                     <textarea id="message" name="message" class="form-control" rows="6" placeholder="Tell us about your inquiry..." required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn--primary btn--full-width">SEND MESSAGE</button>
+                <button type="submit" class="btn btn--primary btn--full-width">SEND MESSAGE →</button>
             </form>
         </div>
     </section>
@@ -323,6 +349,9 @@
                 <a href="https://www.instagram.com/trinetragames" target="_blank">INSTAGRAM</a>
                 <a href="https://www.linkedin.com/company/trinetra-games" target="_blank">LINKEDIN</a>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© 2024 TRINETRA GAMES. ALL RIGHTS RESERVED.</div>
         </div>
     </footer>
 
