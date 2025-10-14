@@ -5,40 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRINETRA GAMES - CRAFTING EXTRAORDINARY GAMING EXPERIENCES</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="TRINETRA GAMES - Independent game development studio crafting extraordinary gaming experiences since 2019.">
+    <meta name="description" content="TRINETRA GAMES - Independent game development studio crafting extraordinary gaming experiences since 2024.">
     <link rel="icon" type="image/png" href="favicon.png">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-  (function(){
-    emailjs.init("AOfRGrrENesAUsH0c");
-  })();
-</script>
+        (function(){
+            emailjs.init("AOfRGrrENesAUsH0c");
+        })();
+    </script>
 </head>
 <body>
+    <!-- SVG Icons Definition -->
+    <svg style="display: none;">
+        <defs>
+            <!-- Mail Icon -->
+            <symbol id="icon-mail" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline stroke="currentColor" stroke-width="2" fill="none" points="22,6 12,13 2,6"/>
+            </symbol>
+            
+            <!-- Globe Icon -->
+            <symbol id="icon-globe" viewBox="0 0 24 24">
+                <circle stroke="currentColor" stroke-width="2" fill="none" cx="12" cy="12" r="10"/>
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M2 12h20"/>
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </symbol>
+            
+            <!-- Clock Icon -->
+            <symbol id="icon-clock" viewBox="0 0 24 24">
+                <circle stroke="currentColor" stroke-width="2" fill="none" cx="12" cy="12" r="10"/>
+                <polyline stroke="currentColor" stroke-width="2" fill="none" points="12,6 12,12 16,14"/>
+            </symbol>
+            
+            <!-- Chat Icon -->
+            <symbol id="icon-chat" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </symbol>
+            
+            <!-- Play Icon -->
+            <symbol id="icon-play" viewBox="0 0 24 24">
+                <polygon stroke="currentColor" stroke-width="2" fill="currentColor" points="5,3 19,12 5,21"/>
+            </symbol>
+            
+            <!-- External Link Icon -->
+            <symbol id="icon-external" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline stroke="currentColor" stroke-width="2" fill="none" points="15,3 21,3 21,9"/>
+                <line stroke="currentColor" stroke-width="2" x1="10" y1="14" x2="21" y2="3"/>
+            </symbol>
+            
+            <!-- Download Icon -->
+            <symbol id="icon-download" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline stroke="currentColor" stroke-width="2" fill="none" points="7,10 12,15 17,10"/>
+                <line stroke="currentColor" stroke-width="2" x1="12" y1="15" x2="12" y2="3"/>
+            </symbol>
+            
+            <!-- Star Icon -->
+            <symbol id="icon-star" viewBox="0 0 24 24">
+                <polygon stroke="currentColor" stroke-width="2" fill="none" points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+            </symbol>
+            
+            <!-- Arrow Right Icon -->
+            <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+                <line stroke="currentColor" stroke-width="2" x1="5" y1="12" x2="19" y2="12"/>
+                <polyline stroke="currentColor" stroke-width="2" fill="none" points="12,5 19,12 12,19"/>
+            </symbol>
+            
+            <!-- Menu Icon -->
+            <symbol id="icon-menu" viewBox="0 0 24 24">
+                <line stroke="currentColor" stroke-width="2" x1="3" y1="6" x2="21" y2="6"/>
+                <line stroke="currentColor" stroke-width="2" x1="3" y1="12" x2="21" y2="12"/>
+                <line stroke="currentColor" stroke-width="2" x1="3" y1="18" x2="21" y2="18"/>
+            </symbol>
+            
+            <!-- Close Icon -->
+            <symbol id="icon-close" viewBox="0 0 24 24">
+                <line stroke="currentColor" stroke-width="2" x1="18" y1="6" x2="6" y2="18"/>
+                <line stroke="currentColor" stroke-width="2" x1="6" y1="6" x2="18" y2="18"/>
+            </symbol>
+            
+            <!-- GitHub Icon -->
+            <symbol id="icon-github" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </symbol>
+            
+            <!-- Discord Icon -->
+            <symbol id="icon-discord" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37.07.07 0 0 0 3.647 4.4C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M8.695 15.173c-1.201 0-2.193-1.103-2.193-2.459s.975-2.459 2.193-2.459c1.227 0 2.21 1.112 2.193 2.459 0 1.356-.975 2.459-2.193 2.459zm6.61 0c-1.201 0-2.193-1.103-2.193-2.459s.975-2.459 2.193-2.459c1.227 0 2.21 1.112 2.193 2.459 0 1.356-.975 2.459-2.193 2.459z"/>
+            </symbol>
+            
+            <!-- Heart Icon -->
+            <symbol id="icon-heart" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </symbol>
+            
+            <!-- Bell Icon -->
+            <symbol id="icon-bell" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </symbol>
+            
+            <!-- Eye Icon -->
+            <symbol id="icon-eye" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-width="2" fill="none" d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle stroke="currentColor" stroke-width="2" fill="none" cx="12" cy="12" r="3"/>
+            </symbol>
+            
+            <!-- Code Icon -->
+            <symbol id="icon-code" viewBox="0 0 24 24">
+                <polyline stroke="currentColor" stroke-width="2" fill="none" points="16,18 22,12 16,6"/>
+                <polyline stroke="currentColor" stroke-width="2" fill="none" points="8,6 2,12 8,18"/>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <img src="favicon.png" alt="Trinetra Logo" class="loading-logo">
+            <div class="loading-text">TRINETRA GAMES</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <nav class="nav-brutal">
             <div class="logo">TRINETRA GAMES</div>
             <div class="nav-menu">
-                <a href="#games" class="nav-link">GAMES</a>
-                <a href="#team" class="nav-link">TEAM</a>
-                <a href="#about" class="nav-link">ABOUT</a>
-                <a href="#contact" class="nav-link">CONTACT</a>
+                <a href="#games" class="nav-link" data-section="games">GAMES</a>
+                <a href="#team" class="nav-link" data-section="team">TEAM</a>
+                <a href="#about" class="nav-link" data-section="about">ABOUT</a>
+                <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
             </div>
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                 <span class="toggle-icon">◐</span>
             </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
         <div class="logo-container">
             <img src="favicon.png" alt="Trinetra Logo" class="logo-img">
         </div>
+        
         <div class="hero-content">
+            <h1 class="hero-title">CRAFTING EXTRAORDINARY GAMING EXPERIENCES</h1>
             <div class="hero-meta">
                 <span class="founded">EST. 2024</span>
                 <span class="separator">|</span>
                 <span class="location">INDIA</span>
+                <span class="separator">|</span>
+                <span class="status">ACTIVE DEVELOPMENT</span>
             </div>
             <div class="hero-stats">
                 <div class="stat">
@@ -53,8 +188,13 @@
                     <span class="stat-number">0</span>
                     <span class="stat-label">RELEASED</span>
                 </div>
+                <div class="stat">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">IN PRODUCTION</span>
+                </div>
             </div>
         </div>
+        
         <div class="scroll-indicator">
             <div class="scroll-line"></div>
             <span>EXPLORE</span>
@@ -63,56 +203,153 @@
 
     <section class="games" id="games">
         <div class="section-header">
+            <div class="section-number">[01]</div>
             <h2 class="section-title">GAME PORTFOLIO</h2>
             <div class="section-line"></div>
+            <p class="section-description">Our current game development pipeline featuring innovative gameplay mechanics and immersive storytelling experiences.</p>
         </div>
+        
         <div class="games-grid">
-            <div class="game-card" data-game="project-glyph">
+            <div class="game-card featured-game" data-game="project-glyph">
+                <div class="game-badge">FEATURED</div>
                 <div class="game-number">01</div>
-                <h3 class="game-title">GLYPH</h3>
-                <p class="game-description">2D Puzzle Platformer</p>
-                <div class="game-meta">
-                    <span class="game-status status--success">Pre-Production</span>
-                    <span class="game-genre">puzzle/Platform</span>
+                <div class="game-preview">
+                    <div class="game-preview-overlay">
+                        <svg class="preview-icon" width="32" height="32">
+                            <use href="#icon-eye"></use>
+                        </svg>
+                        <span class="preview-text">PREVIEW</span>
+                    </div>
                 </div>
-                <button class="btn btn--primary game-view-btn">VIEW GAME</button>
+                <div class="game-content">
+                    <h3 class="game-title">GLYPH</h3>
+                    <p class="game-description">2D Puzzle Platformer where letters become weapons. Harness unique abilities to solve mysteries and overcome challenges.</p>
+                    <div class="game-meta">
+                        <span class="game-status status--success">Pre-Production</span>
+                        <span class="game-genre">Puzzle/Platform</span>
+                    </div>
+                    <div class="game-tags">
+                        <span class="tag">2D</span>
+                        <span class="tag">Indie</span>
+                        <span class="tag">Innovation</span>
+                    </div>
+                    <div class="game-actions">
+                        <button class="btn btn--primary game-view-btn">
+                            <svg width="16" height="16">
+                                <use href="#icon-eye"></use>
+                            </svg>
+                            VIEW DETAILS
+                        </button>
+                        <button class="btn btn--secondary game-wishlist-btn">
+                            <svg width="16" height="16">
+                                <use href="#icon-heart"></use>
+                            </svg>
+                            ADD TO WISHLIST
+                        </button>
+                    </div>
+                </div>
             </div>
 
             <div class="game-card" data-game="project-neo">
                 <div class="game-number">02</div>
-                <h3 class="game-title">PROJECT NEO</h3>
-                <p class="game-description">BASED ON INDIAN CULTURE</p>
-                <div class="game-meta">
-                    <span class="game-status status--warning">IDEATION</span>
-                    <span class="game-genre">NULL</span>
+                <div class="game-preview">
+                    <div class="game-preview-overlay">
+                        <svg class="preview-icon" width="32" height="32">
+                            <use href="#icon-bell"></use>
+                        </svg>
+                        <span class="preview-text">COMING SOON</span>
+                    </div>
                 </div>
-                <button class="btn btn--primary game-view-btn">VIEW GAME</button>
+                <div class="game-content">
+                    <h3 class="game-title">PROJECT NEO</h3>
+                    <p class="game-description">An ambitious project rooted in Indian culture, currently in the ideation phase with exciting possibilities ahead.</p>
+                    <div class="game-meta">
+                        <span class="game-status status--warning">IDEATION</span>
+                        <span class="game-genre">TBD</span>
+                    </div>
+                    <div class="game-tags">
+                        <span class="tag">Cultural</span>
+                        <span class="tag">Concept</span>
+                        <span class="tag">India</span>
+                    </div>
+                    <div class="game-actions">
+                        <button class="btn btn--primary game-view-btn">
+                            <svg width="16" height="16">
+                                <use href="#icon-eye"></use>
+                            </svg>
+                            VIEW DETAILS
+                        </button>
+                        <button class="btn btn--secondary game-notify-btn">
+                            <svg width="16" height="16">
+                                <use href="#icon-bell"></use>
+                            </svg>
+                            NOTIFY ME
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Placeholder for future games -->
+            <div class="game-card game-card-placeholder">
+                <div class="game-number">03</div>
+                <div class="game-content">
+                    <h3 class="game-title">FUTURE PROJECT</h3>
+                    <p class="game-description">We're constantly exploring new ideas and concepts. Stay tuned for announcements about our upcoming projects.</p>
+                    <div class="game-meta">
+                        <span class="game-status status--info">PLANNED</span>
+                        <span class="game-genre">Unknown</span>
+                    </div>
+                    <div class="game-actions">
+                        <button class="btn btn--outline" disabled>COMING SOON</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Enhanced Game Modal -->
     <div class="modal hidden" id="gameModal">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <svg width="24" height="24">
+                    <use href="#icon-close"></use>
+                </svg>
+            </button>
+            
             <div class="game-detail">
                 <div class="game-header">
-                    <h2 class="game-detail-title"></h2>
+                    <div class="game-breadcrumb">
+                        <span>GAMES</span> <span>/</span> <span class="game-detail-title"></span>
+                    </div>
+                    <h2 class="game-detail-title-large"></h2>
                     <p class="game-detail-subtitle"></p>
+                    <div class="game-detail-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">STATUS</span>
+                            <span class="meta-value game-detail-status"></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">GENRE</span>
+                            <span class="meta-value game-detail-genre"></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">RELEASE</span>
+                            <span class="meta-value game-detail-release"></span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="game-content">
+                <div class="game-content-wrapper">
                     <div class="game-main">
                         <div class="game-trailer">
-                            <h3>Prototype</h3>
-                            <div class="game-trailer-container">
-                                </div>
+                            <h3>GAMEPLAY PREVIEW</h3>
+                            <div class="game-trailer-container"></div>
                         </div>
 
                         <div class="game-screenshots">
-                            <h3>SCREENSHOTS</h3>
-                            <div class="screenshots-grid">
-                                </div>
+                            <h3>SCREENSHOTS & MEDIA</h3>
+                            <div class="screenshots-grid"></div>
                         </div>
 
                         <div class="game-description">
@@ -170,6 +407,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="game-progress">
+                            <h4>DEVELOPMENT PROGRESS</h4>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="35"></div>
+                            </div>
+                            <p class="progress-text">35% Complete</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,47 +423,68 @@
 
     <section class="team" id="team">
         <div class="section-header">
+            <div class="section-number">[02]</div>
             <h2 class="section-title">OUR TEAM</h2>
             <div class="section-line"></div>
+            <p class="section-description">Meet the talented individuals behind TRINETRA GAMES, bringing together diverse expertise and creative vision.</p>
         </div>
+        
         <div class="team-grid">
             <div class="member-card">
                 <div class="member-number">[01]</div>
-                <h3 class="member-name">NITIN BURLI</h3>
-                <p class="member-role">CREATIVE DIRECTOR</p>
-                <p class="member-bio">
-                    Nitin brings creative vision to every project, ensuring every project meets our high standards for innovation and quality.
+                <div class="member-avatar">
+                    <div class="avatar-placeholder">NB</div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">NITIN BURLI</h3>
+                    <p class="member-role">CREATIVE DIRECTOR</p>
+                    <p class="member-bio">
+                        Nitin brings creative vision to every project, ensuring every project meets our high standards for innovation and quality. With years of experience in game design, he leads our creative initiatives.
+                    </p>
                     <div class="member-expertise">
-                    <span class="expertise-tag">Game Design</span>
-                    <span class="expertise-tag">Creative Vision</span>
-                    <span class="expertise-tag">Team Leadership</span>
+                        <span class="expertise-tag">Game Design</span>
+                        <span class="expertise-tag">Creative Vision</span>
+                        <span class="expertise-tag">Team Leadership</span>
+                    </div>
                 </div>
             </div>
 
             <div class="member-card">
                 <div class="member-number">[02]</div>
-                <h3 class="member-name">SANJAY</h3>
-                <p class="member-role">DEVELOPER x FOUNDER</p>
-                <p class="member-bio">
-                Sanjay brings technical excellence to every project, specializing in game engine optimization and innovative programming solutions that push the boundaries of what's possible.
+                <div class="member-avatar">
+                    <div class="avatar-placeholder">S</div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">SANJAY</h3>
+                    <p class="member-role">DEVELOPER × FOUNDER</p>
+                    <p class="member-bio">
+                        Sanjay brings technical excellence to every project, specializing in game engine optimization and innovative programming solutions that push the boundaries of what's possible in game development.
+                    </p>
                     <div class="member-expertise">
-                    <span class="expertise-tag">Game Programming</span>
-                    <span class="expertise-tag">Engine Development</span>
-                    <span class="expertise-tag">Technical Architecture</span>
-                    <span class="expertise-tag">Performance Optimization</span>
+                        <span class="expertise-tag">Game Programming</span>
+                        <span class="expertise-tag">Engine Development</span>
+                        <span class="expertise-tag">Technical Architecture</span>
+                        <span class="expertise-tag">Performance Optimization</span>
+                    </div>
                 </div>
             </div>
 
             <div class="member-card">
                 <div class="member-number">[03]</div>
-                <h3 class="member-name">GOSWAMI AYUSH RAJA</h3>
-                <p class="member-role">DEVELOPER x FOUNDER</p>
-                <p class="member-bio">
-                Goswami Ayush Raja is a developer and founder of Studio TRINETRA He is a programmer and graphic designer. He is also a UI/UX designer.</p>
-                <div class="member-expertise">
-                    <span class="expertise-tag">Programmer</span>
-                    <span class="expertise-tag">Graphic Designer</span>
-                    <span class="expertise-tag">UI/UX Designer</span>
+                <div class="member-avatar">
+                    <div class="avatar-placeholder">GAR</div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">GOSWAMI AYUSH RAJA</h3>
+                    <p class="member-role">DEVELOPER × FOUNDER</p>
+                    <p class="member-bio">
+                        Goswami Ayush Raja is a developer and founder of Studio TRINETRA. He is a programmer and graphic designer with expertise in UI/UX design, bringing both technical skills and visual aesthetics to our projects.
+                    </p>
+                    <div class="member-expertise">
+                        <span class="expertise-tag">Programmer</span>
+                        <span class="expertise-tag">Graphic Designer</span>
+                        <span class="expertise-tag">UI/UX Designer</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -227,31 +493,63 @@
     <section class="about" id="about">
         <div class="about-content">
             <div class="about-main">
+                <div class="section-number">[03]</div>
                 <h2 class="about-title">INNOVATION THROUGH COLLABORATION</h2>
                 <div class="about-text">
                     <p><strong>TRINETRA GAMES</strong> is an independent game development studio founded in 2024, dedicated to creating innovative and immersive gaming experiences. Our team of passionate developers, artists, and designers work collaboratively to push the boundaries of interactive entertainment.</p>
 
                     <p>Based in India, our team of 15-20 talented individuals brings together diverse expertise in game design, programming, art direction, and project management. We believe in creating games that not only entertain but also inspire and challenge players. With a spirit of creativity and innovation, we also collaborate beyond India, embracing global perspectives and industry standards.</p>
 
-                    <p>Our mission is to craft extraordinary gaming experiences that resonate with players worldwide. Every project we undertake is approached with meticulous attention to detail and a commitment to excellence that defines our studio culture. We prioritize original ideas in a market dominated by copycat titles, fostering unique concept development and early-stage experimentation. At the same time, we operate on principles of continuous learning, encouraging participation and growth from individuals at all skill levels. By welcoming international collaboration, we share knowledge, embrace diverse perspectives, and align with global industry practices.</p>
+                    <p>Our mission is to craft extraordinary gaming experiences that resonate with players worldwide. Every project we undertake is approached with meticulous attention to detail and a commitment to excellence that defines our studio culture. We prioritize original ideas in a market dominated by copycat titles, fostering unique concept development and early-stage experimentation.</p>
+
+                    <blockquote class="about-quote">
+                        "We believe that great games come from great teams, and great teams come from a culture of creativity, collaboration, and continuous learning."
+                    </blockquote>
+                </div>
+                
+                <div class="about-values">
+                    <h3>OUR VALUES</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <h4>INNOVATION</h4>
+                            <p>Pushing creative boundaries with original concepts</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>QUALITY</h4>
+                            <p>Uncompromising attention to detail and excellence</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>COLLABORATION</h4>
+                            <p>Global perspectives and inclusive development</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>LEARNING</h4>
+                            <p>Continuous growth and skill development</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
             <div class="about-stats">
                 <div class="stat-block">
                     <div class="stat-title">FOUNDED</div>
                     <div class="stat-value">2024</div>
+                    <div class="stat-description">Beginning of our journey</div>
                 </div>
                 <div class="stat-block">
                     <div class="stat-title">TEAM SIZE</div>
                     <div class="stat-value">15-20</div>
+                    <div class="stat-description">Talented developers</div>
                 </div>
                 <div class="stat-block">
                     <div class="stat-title">GAMES RELEASED</div>
                     <div class="stat-value">0</div>
+                    <div class="stat-description">Coming soon</div>
                 </div>
                 <div class="stat-block">
                     <div class="stat-title">IN DEVELOPMENT</div>
-                    <div class="stat-value">1</div>
+                    <div class="stat-value">2</div>
+                    <div class="stat-description">Active projects</div>
                 </div>
             </div>
         </div>
@@ -259,55 +557,102 @@
 
     <section class="contact" id="contact">
         <div class="section-header">
-            <h2 class="section-title">GET IN TOUCH (Currently Offline use our discord or contact us on our email)</h2>
+            <div class="section-number">[04]</div>
+            <h2 class="section-title">GET IN TOUCH</h2>
             <div class="section-line"></div>
+            <p class="section-description">Ready to collaborate or have questions about our games? We'd love to hear from you.</p>
+            <div class="contact-notice">
+                <p><strong>NOTE:</strong> Contact form is currently offline. Please use our Discord or email us directly.</p>
+            </div>
         </div>
+        
         <div class="contact-content">
             <div class="contact-info">
                 <div class="contact-block">
-                    <div class="contact-label">EMAIL</div>
-                    <div class="contact-value">contact@trinetragames.in</div>
+                    <div class="contact-icon">
+                        <svg width="24" height="24">
+                            <use href="#icon-mail"></use>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-label">EMAIL</div>
+                        <div class="contact-value">contact@trinetragames.in</div>
+                    </div>
                 </div>
                 <div class="contact-block">
-                    <div class="contact-label">LOCATION</div>
-                    <div class="contact-value">India</div>
+                    <div class="contact-icon">
+                        <svg width="24" height="24">
+                            <use href="#icon-globe"></use>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-label">LOCATION</div>
+                        <div class="contact-value">India</div>
+                    </div>
                 </div>
                 <div class="contact-block">
-                    <div class="contact-label">BUSINESS HOURS</div>
-                    <div class="contact-value">MON-FRI 9AM-6PM IST</div>
+                    <div class="contact-icon">
+                        <svg width="24" height="24">
+                            <use href="#icon-clock"></use>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-label">BUSINESS HOURS</div>
+                        <div class="contact-value">MON-FRI 9AM-6PM IST</div>
+                    </div>
+                </div>
+                <div class="contact-block">
+                    <div class="contact-icon">
+                        <svg width="24" height="24">
+                            <use href="#icon-chat"></use>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-label">DISCORD</div>
+                        <div class="contact-value">Join our community</div>
+                    </div>
                 </div>
             </div>
 
             <form class="contact-form" id="contactForm">
+                <div class="form-header">
+                    <h3>SEND US A MESSAGE</h3>
+                    <p>Tell us about your inquiry and we'll get back to you soon.</p>
+                </div>
+                
                 <div class="form-grid">
                     <div class="form-group">
-                        <label class="form-label" for="name">NAME</label>
+                        <label class="form-label" for="name">NAME *</label>
                         <input type="text" id="name" name="name" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="email">EMAIL</label>
+                        <label class="form-label" for="email">EMAIL *</label>
                         <input type="email" id="email" name="email" class="form-control" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label" for="inquiry">INQUIRY TYPE</label>
+                    <label class="form-label" for="inquiry">INQUIRY TYPE *</label>
                     <select id="inquiry" name="inquiry" class="form-control" required>
                         <option value="">Select an option</option>
                         <option value="game-inquiries">Game Inquiries</option>
                         <option value="career">Career Opportunities</option>
                         <option value="partnerships">Partnerships</option>
                         <option value="press">Press & Media</option>
+                        <option value="technical">Technical Support</option>
                         <option value="other">Other Requests</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label" for="message">MESSAGE</label>
+                    <label class="form-label" for="message">MESSAGE *</label>
                     <textarea id="message" name="message" class="form-control" rows="6" placeholder="Tell us about your inquiry..." required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn--primary btn--full-width">SEND MESSAGE</button>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn--primary btn--full-width">SEND MESSAGE</button>
+                    <p class="form-note">* Required fields</p>
+                </div>
             </form>
         </div>
     </section>
@@ -317,11 +662,39 @@
             <div class="footer-main">
                 <div class="footer-logo">TRINETRA GAMES</div>
                 <div class="footer-tagline">Crafting Extraordinary Gaming Experiences</div>
+                <div class="footer-description">
+                    Independent game development studio based in India, dedicated to creating innovative and immersive gaming experiences since 2024.
+                </div>
             </div>
             <div class="footer-links">
-                <a href="https://twitter.com/trinetragames" target="_blank">TWITTER</a>
-                <a href="https://www.instagram.com/trinetragames" target="_blank">INSTAGRAM</a>
-                <a href="https://www.linkedin.com/company/trinetra-games" target="_blank">LINKEDIN</a>
+                <div class="footer-section">
+                    <h4>GAMES</h4>
+                    <a href="#games">Portfolio</a>
+                    <a href="#games">Glyph</a>
+                    <a href="#games">Project Neo</a>
+                </div>
+                <div class="footer-section">
+                    <h4>COMPANY</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#team">Our Team</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>CONNECT</h4>
+                    <a href="https://twitter.com/trinetragames" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/trinetragames" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/company/trinetra-games" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                © 2024 TRINETRA GAMES. All rights reserved.
+            </div>
+            <div class="legal-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
             </div>
         </div>
     </footer>
