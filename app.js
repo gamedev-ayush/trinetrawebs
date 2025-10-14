@@ -325,7 +325,7 @@ class ContactFormSystem {
     });
   }
 
-  handleSubmit(e) {
+handleSubmit(e) {
     e.preventDefault();
     const submitBtn = this.form.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
@@ -333,20 +333,29 @@ class ContactFormSystem {
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.7';
 
-    setTimeout(() => {
-      submitBtn.textContent = 'MESSAGE SENT!';
-      submitBtn.style.background = 'var(--accent-color)';
-      submitBtn.style.borderColor = 'var(--accent-color)';
-
-      setTimeout(() => {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-        submitBtn.style.opacity = '1';
-        submitBtn.style.background = '';
-        submitBtn.style.borderColor = '';
-        this.form.reset();
-      }, 2000);
-    }, 1000);
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this.form)
+      .then(() => {
+        submitBtn.textContent = 'MESSAGE SENT!';
+        submitBtn.style.background = 'var(--accent-color)';
+        submitBtn.style.borderColor = 'var(--accent-color)';
+        setTimeout(() => {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
+          submitBtn.style.background = '';
+          submitBtn.style.borderColor = '';
+          this.form.reset();
+        }, 2000);
+      }, (error) => {
+        console.log('FAILED...', error);
+        submitBtn.textContent = 'FAILED!';
+        // You can add some styling for the error state here
+        setTimeout(() => {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
+        }, 2000);
+      });
   }
 
   handleInputFocus(input) {
