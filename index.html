@@ -3,44 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRINETRA GAMES</title>
+    <title>TRINETRA GAMES - CRAFTING EXTRAORDINARY GAMING EXPERIENCES</title>
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="TRINETRA GAMES - Independent game development studio crafting extraordinary gaming experiences since 2024.">
     <link rel="icon" type="image/png" href="favicon.png">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-  (function(){
-    emailjs.init("AOfRGrrENesAUsH0c");
-  })();
-</script>
+        (function(){
+            emailjs.init("AOfRGrrENesAUsH0c");
+        })();
+    </script>
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <img src="favicon.png" alt="Trinetra Logo" class="loading-logo">
+            <div class="loading-text">TRINETRA GAMES</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <nav class="nav-brutal">
-            <div class="logo">TRINETRA</div>
+            <div class="logo">TRINETRA GAMES</div>
             <div class="nav-menu">
-                <a href="#games" class="nav-link">GAMES</a>
-                <a href="#team" class="nav-link">TEAM</a>
-                <a href="#about" class="nav-link">ABOUT</a>
-                <a href="#contact" class="nav-link">CONTACT</a>
+                <a href="#games" class="nav-link" data-section="games">GAMES</a>
+                <a href="#team" class="nav-link" data-section="team">TEAM</a>
+                <a href="#about" class="nav-link" data-section="about">ABOUT</a>
+                <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
             </div>
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                 <span class="toggle-icon">◐</span>
             </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-background-pattern"></div>
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
         <div class="logo-container">
             <img src="favicon.png" alt="Trinetra Logo" class="logo-img">
         </div>
+        
         <div class="hero-content">
-            <h1 class="hero-title"><br></h1>
+            <h1 class="hero-title">CRAFTING EXTRAORDINARY GAMING EXPERIENCES</h1>
             <div class="hero-meta">
-                <span class="founded">2024</span>
+                <span class="founded">EST. 2024</span>
                 <span class="separator">|</span>
                 <span class="location">INDIA</span>
+                <span class="separator">|</span>
+                <span class="status">ACTIVE DEVELOPMENT</span>
             </div>
             <div class="hero-stats">
                 <div class="stat">
@@ -48,79 +75,144 @@
                     <span class="stat-label">DEVELOPERS</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">02</span>
+                    <span class="stat-number">2</span>
                     <span class="stat-label">GAMES</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">00</span>
+                    <span class="stat-number">0</span>
                     <span class="stat-label">RELEASED</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">IN PRODUCTION</span>
                 </div>
             </div>
         </div>
+        
         <div class="scroll-indicator">
             <div class="scroll-line"></div>
-            <span>SCROLL TO EXPLORE</span>
+            <span>EXPLORE</span>
         </div>
     </section>
 
     <section class="games" id="games">
         <div class="section-header">
-            <div class="section-label">OUR PROJECTS</div>
+            <div class="section-number">[01]</div>
             <h2 class="section-title">GAME PORTFOLIO</h2>
             <div class="section-line"></div>
+            <p class="section-description">Our current game development pipeline featuring innovative gameplay mechanics and immersive storytelling experiences.</p>
         </div>
+        
         <div class="games-grid">
-            <div class="game-card" data-game="project-glyph">
-                <div class="game-badge">
-                    <span class="game-number">01</span>
-                </div>
-                <div class="game-card-content">
-                    <h3 class="game-title">GLYPH</h3>
-                    <p class="game-description">2D Puzzle Platformer</p>
-                    <div class="game-meta">
-                        <span class="game-status status--success">PRE-PRODUCTION</span>
-                        <span class="game-genre">PUZZLE / PLATFORM</span>
+            <div class="game-card featured-game" data-game="project-glyph">
+                <div class="game-badge">FEATURED</div>
+                <div class="game-number">01</div>
+                <div class="game-preview">
+                    <div class="game-preview-overlay">
+                        <span class="preview-text">PREVIEW</span>
                     </div>
-                    <button class="btn btn--primary game-view-btn">VIEW PROJECT →</button>
+                </div>
+                <div class="game-content">
+                    <h3 class="game-title">GLYPH</h3>
+                    <p class="game-description">2D Puzzle Platformer where letters become weapons. Harness unique abilities to solve mysteries and overcome challenges.</p>
+                    <div class="game-meta">
+                        <span class="game-status status--success">Pre-Production</span>
+                        <span class="game-genre">Puzzle/Platform</span>
+                    </div>
+                    <div class="game-tags">
+                        <span class="tag">2D</span>
+                        <span class="tag">Indie</span>
+                        <span class="tag">Innovation</span>
+                    </div>
+                    <div class="game-actions">
+                        <button class="btn btn--primary game-view-btn">VIEW DETAILS</button>
+                        <button class="btn btn--secondary game-wishlist-btn">ADD TO WISHLIST</button>
+                    </div>
                 </div>
             </div>
 
             <div class="game-card" data-game="project-neo">
-                <div class="game-badge">
-                    <span class="game-number">02</span>
+                <div class="game-number">02</div>
+                <div class="game-preview">
+                    <div class="game-preview-overlay">
+                        <span class="preview-text">COMING SOON</span>
+                    </div>
                 </div>
-                <div class="game-card-content">
+                <div class="game-content">
                     <h3 class="game-title">PROJECT NEO</h3>
-                    <p class="game-description">BASED ON INDIAN CULTURE</p>
+                    <p class="game-description">An ambitious project rooted in Indian culture, currently in the ideation phase with exciting possibilities ahead.</p>
                     <div class="game-meta">
                         <span class="game-status status--warning">IDEATION</span>
                         <span class="game-genre">TBD</span>
                     </div>
-                    <button class="btn btn--primary game-view-btn">VIEW PROJECT →</button>
+                    <div class="game-tags">
+                        <span class="tag">Cultural</span>
+                        <span class="tag">Concept</span>
+                        <span class="tag">India</span>
+                    </div>
+                    <div class="game-actions">
+                        <button class="btn btn--primary game-view-btn">VIEW DETAILS</button>
+                        <button class="btn btn--secondary game-notify-btn">NOTIFY ME</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Placeholder for future games -->
+            <div class="game-card game-card-placeholder">
+                <div class="game-number">03</div>
+                <div class="game-content">
+                    <h3 class="game-title">FUTURE PROJECT</h3>
+                    <p class="game-description">We're constantly exploring new ideas and concepts. Stay tuned for announcements about our upcoming projects.</p>
+                    <div class="game-meta">
+                        <span class="game-status status--info">PLANNED</span>
+                        <span class="game-genre">Unknown</span>
+                    </div>
+                    <div class="game-actions">
+                        <button class="btn btn--outline" disabled>COMING SOON</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Enhanced Game Modal -->
     <div class="modal hidden" id="gameModal">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+            <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+            
             <div class="game-detail">
                 <div class="game-header">
-                    <h2 class="game-detail-title"></h2>
+                    <div class="game-breadcrumb">
+                        <span>GAMES</span> <span>/</span> <span class="game-detail-title"></span>
+                    </div>
+                    <h2 class="game-detail-title-large"></h2>
                     <p class="game-detail-subtitle"></p>
+                    <div class="game-detail-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">STATUS</span>
+                            <span class="meta-value game-detail-status"></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">GENRE</span>
+                            <span class="meta-value game-detail-genre"></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">RELEASE</span>
+                            <span class="meta-value game-detail-release"></span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="game-content">
+                <div class="game-content-wrapper">
                     <div class="game-main">
                         <div class="game-trailer">
-                            <h3>PROTOTYPE</h3>
+                            <h3>GAMEPLAY PREVIEW</h3>
                             <div class="game-trailer-container"></div>
                         </div>
 
                         <div class="game-screenshots">
-                            <h3>SCREENSHOTS</h3>
+                            <h3>SCREENSHOTS & MEDIA</h3>
                             <div class="screenshots-grid"></div>
                         </div>
 
@@ -179,6 +271,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="game-progress">
+                            <h4>DEVELOPMENT PROGRESS</h4>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="35"></div>
+                            </div>
+                            <p class="progress-text">35% Complete</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -187,95 +287,133 @@
 
     <section class="team" id="team">
         <div class="section-header">
-            <div class="section-label">MEET THE CREATORS</div>
+            <div class="section-number">[02]</div>
             <h2 class="section-title">OUR TEAM</h2>
             <div class="section-line"></div>
+            <p class="section-description">Meet the talented individuals behind TRINETRA GAMES, bringing together diverse expertise and creative vision.</p>
         </div>
+        
         <div class="team-grid">
             <div class="member-card">
-                <div class="member-header">
-                    <div class="member-number">[01]</div>
+                <div class="member-number">[01]</div>
+                <div class="member-avatar">
+                    <div class="avatar-placeholder">NB</div>
+                </div>
+                <div class="member-info">
                     <h3 class="member-name">NITIN BURLI</h3>
                     <p class="member-role">CREATIVE DIRECTOR</p>
-                </div>
-                <p class="member-bio">
-                    Nitin brings creative vision to every project, ensuring every project meets our high standards for innovation and quality.
-                </p>
-                <div class="member-expertise">
-                    <span class="expertise-tag">GAME DESIGN</span>
-                    <span class="expertise-tag">CREATIVE VISION</span>
-                    <span class="expertise-tag">TEAM LEADERSHIP</span>
+                    <p class="member-bio">
+                        Nitin brings creative vision to every project, ensuring every project meets our high standards for innovation and quality. With years of experience in game design, he leads our creative initiatives.
+                    </p>
+                    <div class="member-expertise">
+                        <span class="expertise-tag">Game Design</span>
+                        <span class="expertise-tag">Creative Vision</span>
+                        <span class="expertise-tag">Team Leadership</span>
+                    </div>
                 </div>
             </div>
 
             <div class="member-card">
-                <div class="member-header">
-                    <div class="member-number">[02]</div>
+                <div class="member-number">[02]</div>
+                <div class="member-avatar">
+                    <div class="avatar-placeholder">S</div>
+                </div>
+                <div class="member-info">
                     <h3 class="member-name">SANJAY</h3>
                     <p class="member-role">DEVELOPER × FOUNDER</p>
-                </div>
-                <p class="member-bio">
-                    Sanjay brings technical excellence to every project, specializing in game engine optimization and innovative programming solutions.
-                </p>
-                <div class="member-expertise">
-                    <span class="expertise-tag">GAME PROGRAMMING</span>
-                    <span class="expertise-tag">ENGINE DEV</span>
-                    <span class="expertise-tag">ARCHITECTURE</span>
-                    <span class="expertise-tag">OPTIMIZATION</span>
+                    <p class="member-bio">
+                        Sanjay brings technical excellence to every project, specializing in game engine optimization and innovative programming solutions that push the boundaries of what's possible in game development.
+                    </p>
+                    <div class="member-expertise">
+                        <span class="expertise-tag">Game Programming</span>
+                        <span class="expertise-tag">Engine Development</span>
+                        <span class="expertise-tag">Technical Architecture</span>
+                        <span class="expertise-tag">Performance Optimization</span>
+                    </div>
                 </div>
             </div>
 
             <div class="member-card">
-                <div class="member-header">
-                    <div class="member-number">[03]</div>
+                <div class="member-number">[03]</div>
+                <div class="member-avatar">
+                    <div class="avatar-placeholder">GAR</div>
+                </div>
+                <div class="member-info">
                     <h3 class="member-name">GOSWAMI AYUSH RAJA</h3>
                     <p class="member-role">DEVELOPER × FOUNDER</p>
-                </div>
-                <p class="member-bio">
-                    Goswami Ayush Raja is a developer and founder of Studio TRINETRA. He is a programmer and graphic designer with UI/UX expertise.
-                </p>
-                <div class="member-expertise">
-                    <span class="expertise-tag">PROGRAMMER</span>
-                    <span class="expertise-tag">GRAPHIC DESIGN</span>
-                    <span class="expertise-tag">UI/UX DESIGN</span>
+                    <p class="member-bio">
+                        Goswami Ayush Raja is a developer and founder of Studio TRINETRA. He is a programmer and graphic designer with expertise in UI/UX design, bringing both technical skills and visual aesthetics to our projects.
+                    </p>
+                    <div class="member-expertise">
+                        <span class="expertise-tag">Programmer</span>
+                        <span class="expertise-tag">Graphic Designer</span>
+                        <span class="expertise-tag">UI/UX Designer</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="about" id="about">
-        <div class="section-header">
-            <div class="section-label">WHO WE ARE</div>
-            <h2 class="section-title">ABOUT STUDIO</h2>
-            <div class="section-line"></div>
-        </div>
         <div class="about-content">
             <div class="about-main">
+                <div class="section-number">[03]</div>
                 <h2 class="about-title">INNOVATION THROUGH COLLABORATION</h2>
                 <div class="about-text">
                     <p><strong>TRINETRA GAMES</strong> is an independent game development studio founded in 2024, dedicated to creating innovative and immersive gaming experiences. Our team of passionate developers, artists, and designers work collaboratively to push the boundaries of interactive entertainment.</p>
 
-                    <p>Based in India, our team of 15-20 talented individuals brings together diverse expertise in game design, programming, art direction, and project management. We believe in creating games that not only entertain but also inspire and challenge players.</p>
+                    <p>Based in India, our team of 15-20 talented individuals brings together diverse expertise in game design, programming, art direction, and project management. We believe in creating games that not only entertain but also inspire and challenge players. With a spirit of creativity and innovation, we also collaborate beyond India, embracing global perspectives and industry standards.</p>
 
-                    <p>Our mission is to craft extraordinary gaming experiences that resonate with players worldwide. Every project we undertake is approached with meticulous attention to detail and a commitment to excellence that defines our studio culture.</p>
+                    <p>Our mission is to craft extraordinary gaming experiences that resonate with players worldwide. Every project we undertake is approached with meticulous attention to detail and a commitment to excellence that defines our studio culture. We prioritize original ideas in a market dominated by copycat titles, fostering unique concept development and early-stage experimentation.</p>
+
+                    <blockquote class="about-quote">
+                        "We believe that great games come from great teams, and great teams come from a culture of creativity, collaboration, and continuous learning."
+                    </blockquote>
+                </div>
+                
+                <div class="about-values">
+                    <h3>OUR VALUES</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <h4>INNOVATION</h4>
+                            <p>Pushing creative boundaries with original concepts</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>QUALITY</h4>
+                            <p>Uncompromising attention to detail and excellence</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>COLLABORATION</h4>
+                            <p>Global perspectives and inclusive development</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>LEARNING</h4>
+                            <p>Continuous growth and skill development</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
             <div class="about-stats">
                 <div class="stat-block">
                     <div class="stat-title">FOUNDED</div>
                     <div class="stat-value">2024</div>
+                    <div class="stat-description">Beginning of our journey</div>
                 </div>
                 <div class="stat-block">
                     <div class="stat-title">TEAM SIZE</div>
                     <div class="stat-value">15-20</div>
+                    <div class="stat-description">Talented developers</div>
                 </div>
                 <div class="stat-block">
-                    <div class="stat-title">RELEASED</div>
-                    <div class="stat-value">00</div>
+                    <div class="stat-title">GAMES RELEASED</div>
+                    <div class="stat-value">0</div>
+                    <div class="stat-description">Coming soon</div>
                 </div>
                 <div class="stat-block">
-                    <div class="stat-title">IN DEV</div>
-                    <div class="stat-value">01</div>
+                    <div class="stat-title">IN DEVELOPMENT</div>
+                    <div class="stat-value">2</div>
+                    <div class="stat-description">Active projects</div>
                 </div>
             </div>
         </div>
@@ -283,28 +421,53 @@
 
     <section class="contact" id="contact">
         <div class="section-header">
-            <div class="section-label">LET'S CONNECT</div>
+            <div class="section-number">[04]</div>
             <h2 class="section-title">GET IN TOUCH</h2>
             <div class="section-line"></div>
-            <p class="section-note">Currently Offline - Use our Discord or email</p>
+            <p class="section-description">Ready to collaborate or have questions about our games? We'd love to hear from you.</p>
+            <div class="contact-notice">
+                <p><strong>NOTE:</strong> Contact form is currently offline. Please use our Discord or email us directly.</p>
+            </div>
         </div>
+        
         <div class="contact-content">
             <div class="contact-info">
                 <div class="contact-block">
-                    <div class="contact-label">EMAIL</div>
-                    <div class="contact-value">contact@trinetragames.in</div>
+                    <div class="contact-icon">@</div>
+                    <div class="contact-details">
+                        <div class="contact-label">EMAIL</div>
+                        <div class="contact-value">contact@trinetragames.in</div>
+                    </div>
                 </div>
                 <div class="contact-block">
-                    <div class="contact-label">LOCATION</div>
-                    <div class="contact-value">India</div>
+                    <div class="contact-icon">🌍</div>
+                    <div class="contact-details">
+                        <div class="contact-label">LOCATION</div>
+                        <div class="contact-value">India</div>
+                    </div>
                 </div>
                 <div class="contact-block">
-                    <div class="contact-label">BUSINESS HOURS</div>
-                    <div class="contact-value">MON-FRI 9AM-6PM IST</div>
+                    <div class="contact-icon">⏰</div>
+                    <div class="contact-details">
+                        <div class="contact-label">BUSINESS HOURS</div>
+                        <div class="contact-value">MON-FRI 9AM-6PM IST</div>
+                    </div>
+                </div>
+                <div class="contact-block">
+                    <div class="contact-icon">💬</div>
+                    <div class="contact-details">
+                        <div class="contact-label">DISCORD</div>
+                        <div class="contact-value">Join our community</div>
+                    </div>
                 </div>
             </div>
 
             <form class="contact-form" id="contactForm">
+                <div class="form-header">
+                    <h3>SEND US A MESSAGE</h3>
+                    <p>Tell us about your inquiry and we'll get back to you soon.</p>
+                </div>
+                
                 <div class="form-grid">
                     <div class="form-group">
                         <label class="form-label" for="name">NAME *</label>
@@ -324,6 +487,7 @@
                         <option value="career">Career Opportunities</option>
                         <option value="partnerships">Partnerships</option>
                         <option value="press">Press & Media</option>
+                        <option value="technical">Technical Support</option>
                         <option value="other">Other Requests</option>
                     </select>
                 </div>
@@ -333,7 +497,10 @@
                     <textarea id="message" name="message" class="form-control" rows="6" placeholder="Tell us about your inquiry..." required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn--primary btn--full-width">SEND MESSAGE →</button>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn--primary btn--full-width">SEND MESSAGE</button>
+                    <p class="form-note">* Required fields</p>
+                </div>
             </form>
         </div>
     </section>
@@ -343,15 +510,40 @@
             <div class="footer-main">
                 <div class="footer-logo">TRINETRA GAMES</div>
                 <div class="footer-tagline">Crafting Extraordinary Gaming Experiences</div>
+                <div class="footer-description">
+                    Independent game development studio based in India, dedicated to creating innovative and immersive gaming experiences since 2024.
+                </div>
             </div>
             <div class="footer-links">
-                <a href="https://twitter.com/trinetragames" target="_blank">TWITTER</a>
-                <a href="https://www.instagram.com/trinetragames" target="_blank">INSTAGRAM</a>
-                <a href="https://www.linkedin.com/company/trinetra-games" target="_blank">LINKEDIN</a>
+                <div class="footer-section">
+                    <h4>GAMES</h4>
+                    <a href="#games">Portfolio</a>
+                    <a href="#games">Glyph</a>
+                    <a href="#games">Project Neo</a>
+                </div>
+                <div class="footer-section">
+                    <h4>COMPANY</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#team">Our Team</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>CONNECT</h4>
+                    <a href="https://twitter.com/trinetragames" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/trinetragames" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/company/trinetra-games" target="_blank">LinkedIn</a>
+                </div>
             </div>
         </div>
+        
         <div class="footer-bottom">
-            <div class="footer-copy">© 2024 TRINETRA GAMES. ALL RIGHTS RESERVED.</div>
+            <div class="footer-copyright">
+                © 2024 TRINETRA GAMES. All rights reserved.
+            </div>
+            <div class="legal-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
         </div>
     </footer>
 
