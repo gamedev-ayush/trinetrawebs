@@ -38,6 +38,46 @@ const GAME_DATA = {
     },
     rating: null
   },
+  
+  "project-glyph": {
+    id: "project-glyph",
+    title: "GLYPH",
+    subtitle: "Where letters become weapons",
+    description: "GLYPH is a 2D puzzle-platformer where every letter holds unique power—serving as both a weapon and a tool. Harness these abilities to unravel mysteries, overcome challenges, and ultimately escape to victory.",
+    genre: "Puzzle/Platformer",
+    platforms: ["PC", "Mobiles"],
+    status: "Pre-Production",
+    releaseDate: "April 23, 2025",
+    trailer: "https://www.youtube.com/embed/zKTTZNup2Cc?si=UikDXTIX_gwj6JUb", // 
+    screenshots: [
+        "https://img.itch.zone/aW1hZ2UvMzk1MzMwNC8yMzU3NjA3My5qcGc=/original/npGM%2Bl.jpg", // <-- Replace with your image link
+        "https://img.itch.zone/aW1hZ2UvMzk1MzMwNC8yMzU3NjA3MS5qcGc=/original/OwGU0h.jpg", // <-- Replace with your image link
+        "https://img.itch.zone/aW1hZ2UvMzk1MzMwNC8yMzU3NjA3MC5qcGc=/original/dYSQEw.jpg", // <-- Replace with your image link
+        "https://img.itch.zone/aW1hZ2UvMzk1MzMwNC8yMzU3NjA3Mi5qcGc=/original/n7BNaa.jpg"  // <-- Replace with your image link
+    ],
+    features: [
+      "Procedural level generation",
+      "Adaptive soundtrack",
+      "Multiple character skins",
+      "Global leaderboards",
+      "Achievement system"
+    ],
+    team: [
+      "Nitin Burli - Game Director",
+      "Adamya Gupta & Phan Thanh Duc - Lead Programmer",
+      "Manish, Admya, Phan Thanh Duc, Sanjay, Ayush - Gameplay Programmers",
+      "Aditya & Drew - Level Designer",
+      "Music - Zsombor"
+    ],
+    systemReqs: {
+      minimum: "null",
+      recommended: "null"
+    },
+    downloads: {
+      itch: "https://sanjaythedev.itch.io/glyph",
+    },
+    rating: null
+  },
   "project-neo": {
     id: "project-neo",
     title: "Project NEO",
