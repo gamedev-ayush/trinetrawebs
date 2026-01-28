@@ -1,19 +1,19 @@
 const GAME_DATA = {
-  "project-glyph": {
-    id: "project-glyph",
-    title: "GLYPH",
-    subtitle: "Where letters become weapons",
-    description: "GLYPH is a 2D puzzle-platformer where every letter holds unique power—serving as both a weapon and a tool. Harness these abilities to unravel mysteries, overcome challenges, and ultimately escape to victory.",
+  "project-candybust": {
+    id: "project-candybust",
+    title: "Block Pop Mania Puzzle Game",
+    subtitle: "Ultimate match and blast puzzle game",
+    description: " Welcome to Block Pop Mania – the ultimate match & blast puzzle adventure. Tap, match, and pop colorful blocks to clear levels, earn rewards, and unlock exciting boosters. Every move counts, and every combo feels incredibly satisfying.With hundreds of handcrafted levels and vibrant 3D visuals, Block Pop Mania offers hours of relaxing yet challenging gameplay. Whether you’re a casual player or a puzzle master, it’s the perfect way to unwind, train your brain, and test your strategy.Collect powerful boosters to overcome tricky obstacles, create explosive combos, and climb the leaderboard. The more blocks you pop, the higher your score grows. Each level brings new surprises and mechanics that keep the experience fresh and engaging.Simple to play but hard to master – Block Pop Mania is free to play, offline-friendly, and designed for everyone who loves colorful, satisfying puzzle games. Download now and start popping your way to puzzle glory. ",
     genre: "Puzzle/Platformer",
-    platforms: ["PC", "Mobiles"],
-    status: "Pre-Production",
-    releaseDate: "April 23, 2025",
-    trailer: "https://www.youtube.com/embed/zKTTZNup2Cc?si=UikDXTIX_gwj6JUb", // 
+    platforms: ["Mobiles"],
+    status: "Production",
+    releaseDate: "January, 2026",
+    trailer: "null", // 
     screenshots: [
-        "https://img.itch.zone/aW1hZ2UvMzk1MzMwNC8yMzU3NjA3My5qcGc=/original/npGM%2Bl.jpg", // <-- Replace with your image link
-        "https://img.itch.zone/aW1hZ2UvMzk1MzMwNC8yMzU3NjA3MS5qcGc=/original/OwGU0h.jpg", // <-- Replace with your image link
-        "https://img.itch.zone/aW1hZ2UvMzk1MzMwNC8yMzU3NjA3MC5qcGc=/original/dYSQEw.jpg", // <-- Replace with your image link
-        "https://img.itch.zone/aW1hZ2UvMzk1MzMwNC8yMzU3NjA3Mi5qcGc=/original/n7BNaa.jpg"  // <-- Replace with your image link
+        "https://play-lh.googleusercontent.com/NHH6QPkfxMlCoR0bDU31GO29wrV5ZwPb8qfJ_Q9EUX6pVIIwTwTPP60gNzeEx61av-SQpdQeCyEMZOsi2WJ-5Io=w5120-h2880-rw", // <-- Replace with your image link
+        "https://play-lh.googleusercontent.com/2cVjrwakCYipAGTR9plcBCqOuIgElFTGcfPNQ5W9Fut3T888qrZaeutzKZAteHmH73hPCEbksUidFvLt9_wY0g=w5120-h2880-rw", // <-- Replace with your image link
+        "https://play-lh.googleusercontent.com/AkJB-RJ-w70mG3ngJNABedj0ZBS1daHf3_WtwXFMxNX3pYHd7hfV8TSRnjZxgrpNGerlzo9g5gFcK3mz4G4EbQ=w5120-h2880-rw", // <-- Replace with your image link
+        "https://play-lh.googleusercontent.com/AkJB-RJ-w70mG3ngJNABedj0ZBS1daHf3_WtwXFMxNX3pYHd7hfV8TSRnjZxgrpNGerlzo9g5gFcK3mz4G4EbQ=w5120-h2880-rw"  // <-- Replace with your image link
     ],
     features: [
       "Procedural level generation",
@@ -24,17 +24,14 @@ const GAME_DATA = {
     ],
     team: [
       "Nitin Burli - Game Director",
-      "Adamya Gupta & Phan Thanh Duc - Lead Programmer",
-      "Manish, Admya, Phan Thanh Duc, Sanjay, Ayush - Gameplay Programmers",
-      "Aditya & Drew - Level Designer",
-      "Music - Zsombor"
+      "Sanjay, Ayush - Gameplay Programmers"
     ],
     systemReqs: {
       minimum: "null",
       recommended: "null"
     },
     downloads: {
-      itch: "https://sanjaythedev.itch.io/glyph",
+      itch: "https://play.google.com/store/apps/details?id=com.block.pop.mania",
     },
     rating: null
   },
