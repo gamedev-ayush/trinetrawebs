@@ -359,12 +359,12 @@ a:hover {
 
 .hero {
   min-height: 100vh;
-  /* display: flex; */
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: var(--space-16) var(--space-4) var(--space-20);
-  /*padding-top: calc(var(--space-32) + 80px);  Extra space for logo */
+  padding: var(--space-32) var(--space-4) var(--space-20);
+  padding-top: calc(var(--space-32) + 80px); /* Extra space for logo */
   background: 
     linear-gradient(to bottom, transparent 95%, var(--border-primary) 95%),
     linear-gradient(to right, transparent 95%, var(--border-primary) 95%);
@@ -569,9 +569,9 @@ a:hover {
    =================================== */
 
 .logo-container {
-  /* position: absolute;
+  position: absolute;
   top: 20%;
-  left: 50%; */
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
   opacity: 0;
